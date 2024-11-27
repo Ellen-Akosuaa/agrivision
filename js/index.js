@@ -15,8 +15,6 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 
-
-
 const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', (event) => {
