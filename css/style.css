@@ -8,21 +8,21 @@ body {
 
 /* Header Background */
 #header-bg {
-    background-image: url(../images/tomatoes-4474174_1920.jpg);
+    background-image: url(../images/large\ logo.jpg);
     background-position: center;
     background-size: cover;
     height: 70vh;
-    padding: 2rem 7rem;
+    /* padding: 2rem 7rem; */
     font-family: 'Times New Roman', Times, serif;
     padding-bottom: 10rem;
     animation: change 20s infinite ease-in-out;
 }
 
-@keyframes change {
+/* @keyframes change {
     40% {
         background-image: url(../images/grapes-5603367_1920.jpg);
     }
-}
+} */
 
 /* Logo Styling */
 .logo {
@@ -45,10 +45,15 @@ body {
 }
 
 .nav {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 30px;
+    background-color:#045142bd;
 }
 
 .nav img {
@@ -174,14 +179,21 @@ body {
 
 .about-content h2 {
     font-size: 2.5rem;
-    color: #633107; 
+    color: #045142; 
     margin-bottom: 1.5rem;
 }
 
 .about-content p {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #333;
+    color: black;
+}
+.about-btn {
+    color: white;
+    background-color:#045142;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 2rem;
 }
 
 .about-image {
@@ -214,7 +226,7 @@ body {
 
 /* Services Section */
 .services {
-    background-color: rgba(236, 192, 161, 0.253);
+    background-color: #0451424b;
 }
 
 .services-text {
@@ -222,11 +234,11 @@ body {
     padding-bottom: 3rem;
     text-align: center;
     font-size: 40px;
-    color: rgb(99, 45, 7);
+    color: #045142;
 }
 
 .services-img h3 {
-    color: rgb(99, 45, 7);
+    color: #045142;
     font-size: 15px;
     text-align: left;
     padding: 10px 10px;
@@ -267,7 +279,7 @@ body {
 
 /* Footer Styling */
 .footer {
-    background-color: #d3cccca8;
+    background-color: #045142bd;
     color: #fff;
     padding: 40px 0;
 }
@@ -286,8 +298,8 @@ body {
 .list h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: black;
-    border-bottom: 2px solid white;
+    color: white;
+    border-bottom: 2px solid black;
     padding-bottom: 10px;
 }
 
@@ -301,7 +313,7 @@ body {
 }
 
 .list ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -399,7 +411,7 @@ body {
 }
 
 .car-content {
-    background-color: #d3c7b9;
+    background-color: #045142bd;
     width: 100%;
     max-width: 500px;
     height: 200px;
@@ -419,7 +431,7 @@ body {
 .car-content p {
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
+    color: white;
 }
 
 .testimonials-swiper {
@@ -428,7 +440,7 @@ body {
 
 .testimonials-swiper .swiper-button-next,
 .testimonials-swiper .swiper-button-prev {
-    color: #333;
+    color: #045142bd;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -480,7 +492,7 @@ input, textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #045142;
     color: white;
     border: none;
     cursor: pointer;
