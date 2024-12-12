@@ -8,21 +8,24 @@ body {
 
 /* Header Background */
 #header-bg {
-    background-image: url(../images/large\ logo.jpg);
+    background-image: url(../images/new10.jpg);
     background-position: center;
     background-size: cover;
-    height: 70vh;
+    height: 90vh;
     /* padding: 2rem 7rem; */
     font-family: 'Times New Roman', Times, serif;
     padding-bottom: 10rem;
     animation: change 20s infinite ease-in-out;
 }
 
-/* @keyframes change {
+@keyframes change {
     40% {
-        background-image: url(../images/grapes-5603367_1920.jpg);
+        background-image: url(../images/new11.jpg);
     }
-} */
+    60% {
+        background-image: url(../images/new9.jpg);
+    }
+}
 
 /* Logo Styling */
 .logo {
@@ -45,25 +48,25 @@ body {
 }
 
 .nav {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 30px;
-    background-color:#045142bd;
+    background-color:white;
 }
 
 .nav img {
-    width: 100px;
+    width: 70px;
     padding-right: 2rem;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 20px;
 }
 
@@ -179,7 +182,7 @@ body {
 
 .about-content h2 {
     font-size: 2.5rem;
-    color: #045142; 
+    color: black; 
     margin-bottom: 1.5rem;
 }
 
@@ -226,7 +229,7 @@ body {
 
 /* Services Section */
 .services {
-    background-color: #0451424b;
+    background-color: #00A859;
 }
 
 .services-text {
@@ -234,15 +237,16 @@ body {
     padding-bottom: 3rem;
     text-align: center;
     font-size: 40px;
-    color: #045142;
+    color: black;
 }
 
 .services-img h3 {
-    color: #045142;
-    font-size: 15px;
+    color: black;
+    font-size: 22px;
     text-align: left;
-    padding: 10px 10px;
-    padding-bottom: 15rem;
+    padding-top: 4rem;
+    padding: 5px 5px;
+    padding-bottom: 3rem;
 }
 
 .services-images {
@@ -254,6 +258,7 @@ body {
 }
 
 .services-images img {
+    border-radius: 10px;
     transition: transform 0.6s;
 }
 
@@ -263,9 +268,9 @@ body {
 
 .services-images img {
     width: 100%;
-    height: 65%;
-    background-color: white;
-    color: white;
+    height: 80%;
+    /* background-color: white; */
+    /* color: white; */
     box-shadow: 0 4px 8px;
 }
 
@@ -279,7 +284,7 @@ body {
 
 /* Footer Styling */
 .footer {
-    background-color: #045142bd;
+    background-color: #00A859;
     color: #fff;
     padding: 40px 0;
 }
@@ -299,7 +304,7 @@ body {
     font-size: 18px;
     margin-bottom: 10px;
     color: white;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     padding-bottom: 10px;
 }
 
@@ -471,6 +476,13 @@ body {
     padding-bottom: 7rem;
 }
 
+.image-container img {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;   
+}
+
+
 .form-container {
     flex: 1;
     padding: 20px;
@@ -492,7 +504,7 @@ input, textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #045142;
+    background-color: #00A859;
     color: white;
     border: none;
     cursor: pointer;
@@ -563,4 +575,16 @@ button {
     background-color: #457E73;
     border-radius: 2px;
     transition: all 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(7px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px);
 }
