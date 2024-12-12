@@ -1,4 +1,9 @@
 /* General Reset */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -21,9 +26,6 @@ body {
 @keyframes change {
     40% {
         background-image: url(../images/new11.jpg);
-    }
-    60% {
-        background-image: url(../images/new9.jpg);
     }
 }
 
@@ -69,40 +71,115 @@ body {
     color: black;
     font-size: 20px;
 }
-
 /* Header Text */
 .header-text {
     color: white;
-    font-size: 25pt;
-    margin-top: 12rem;
-    margin-bottom: 6rem;
+    font-size: 35px; /* Use px for better scalability */
+    margin-top: 7rem;
+    margin-bottom: 4rem;
     text-align: center;
+    line-height: 1.5; /* Improves readability */
 }
 
+.header-text p {
+    font-size: 20px; /* Match scalable font size */
+    font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
 @media (max-width: 1024px) {
-    
     #header-bg {
-        height: 60vh; 
-        padding: 2rem 5rem; 
-    }
-
-    .logo {
-        font-size: 24pt;
-    }
-
-    #nav-links {
-        gap: 30px;
-    }
-
-    .nav-item a {
-        font-size: 18px; 
+        height: 60vh;
+        padding: 2rem 5rem;
     }
 
     .header-text {
-        font-size: 22pt; 
-        margin-top: 8rem;
-        margin-bottom: 4rem; 
+        font-size: 28px; /* Adjust header size */
+        margin-top: 6rem;
+        margin-bottom: 3rem;
     }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    #nav-links {
+        gap: 20px;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header-bg {
+        height: 50vh;
+        padding: 1rem 3rem;
+    }
+
+    .header-text {
+        font-size: 22px; /* Smaller font for smaller screens */
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .header-text p {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    #nav-links {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text {
+        font-size: 18px;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .header-text p {
+        font-size: 14px;
+    }
+
+    .view-btn {
+        padding: 10px 20px;
+        font-size: 14px; /* Smaller button text */
+    }
+}
+
+/* Button Styling */
+.view-btn {
+    color: white;
+    background-color: #00A859;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px; /* Add consistent font size */
+}
+
+.view-btn:hover {
+    background-color: #FFA500;
+}
+
+/* Download Section */
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0; /* Add spacing */
 }
 
 @media (max-width: 768px) {
@@ -237,11 +314,11 @@ body {
     padding-bottom: 3rem;
     text-align: center;
     font-size: 40px;
-    color: black;
+    color: white;
 }
 
 .services-img h3 {
-    color: black;
+    color: white;
     font-size: 22px;
     text-align: left;
     padding-top: 4rem;
@@ -588,3 +665,119 @@ button {
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translateY(-7px);
 }
+
+/* Section Title */
+.mission {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+  
+  .mission h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Flip Box Container */
+  .flip-box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+    padding-bottom: 8rem;
+  }
+  
+  /* Flip Box Styling */
+  .flip-box {
+    width: 300px;
+    height: 350px; /* Box height */
+    perspective: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  /* Inner Box */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+    border-radius: 15px;
+  }
+  
+  /* Front and Back Sides */
+  .flip-box-front,
+  .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack text properly */
+    text-align: center;
+    padding: 30px; /* More padding for space around text */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+  
+  /* Front Side */
+  .flip-box-front {
+    background-color: #ffa600ad;
+    border: 1px solid #ddd;
+  }
+  
+  /* Back Side */
+  .flip-box-back {
+    background-color: #00A859; 
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  /* Flip Effect on Hover */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Text Styling */
+  .flip-box h3 {
+    font-size: 22px; /* Larger title */
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .flip-box p {
+    font-size: 18px; /* Larger text for readability */
+    line-height: 1.6; /* More spacing between lines */
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .flip-box-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+      gap: 15px;
+    }
+  
+    .flip-box {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 400px; /* Optional max width */
+    }
+  
+    .section-title h2 {
+      font-size: 24px; /* Adjust title size for smaller screens */
+    }
+  }
+  
