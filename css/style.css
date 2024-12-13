@@ -13,19 +13,20 @@ body {
 
 /* Header Background */
 #header-bg {
-    background-image: url(../images/new10.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(../images/new10.jpg);
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     /* padding: 2rem 7rem; */
     font-family: 'Times New Roman', Times, serif;
     padding-bottom: 10rem;
     animation: change 20s infinite ease-in-out;
+    
 }
 
 @keyframes change {
     40% {
-        background-image: url(../images/new11.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(../images/new11.jpg);
     }
 }
 
@@ -160,15 +161,15 @@ body {
 /* Header Text */
 .header-text {
     color: white;
-    font-size: 35px; /* Use px for better scalability */
+    font-size: 35px; 
     margin-top: 7rem;
     margin-bottom: 4rem;
     text-align: center;
-    line-height: 1.5; /* Improves readability */
+    line-height: 1.5; 
 }
 
 .header-text p {
-    font-size: 20px; /* Match scalable font size */
+    font-size: 25px; 
     font-weight: bold;
 }
 
@@ -180,13 +181,13 @@ body {
     }
 
     .header-text {
-        font-size: 28px; /* Adjust header size */
+        font-size: 28px; 
         margin-top: 6rem;
         margin-bottom: 3rem;
     }
 
     .header-text p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .logo {
@@ -215,7 +216,7 @@ body {
     }
 
     .header-text p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .logo {
