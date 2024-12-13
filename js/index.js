@@ -51,8 +51,8 @@ form.addEventListener('submit', (event) => {
 });
 
 // JavaScript to toggle the menu
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
