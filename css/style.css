@@ -38,6 +38,66 @@ body {
     font-weight: 15rem;
 }
 
+/* off-screen-menu */
+.nav-links {
+    background-color:  white;
+    height: 35vh;
+    width: 50%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.nav-links.active {
+    right: 0;
+}
+
+/* ham menu */
+.hamburger {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.hamburger span {
+    height: 5px;
+    width: 100%;
+    background-color: #00A859;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.hamburger span:nth-child(1) {
+    top: 25%;
+}
+.hamburger span:nth-child(3) {
+    top: 75%;
+}
+.hamburger.active span {
+    background-color: white;
+}
+.hamburger.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 /* Navigation */
 #nav-links {
     padding-top: 0.5rem;
@@ -162,7 +222,7 @@ body {
 /* Button Styling */
 .view-btn {
     color: white;
-    background-color: #00A859;
+    background-color: #FFA500;
     padding: 15px 25px;
     border: none;
     border-radius: 10px;
@@ -171,7 +231,7 @@ body {
 }
 
 .view-btn:hover {
-    background-color: #FFA500;
+    background-color: #00A859
 }
 
 /* Download Section */
@@ -636,36 +696,6 @@ button {
     }
 }
 
-/* Hamburger Icon Styling */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    display: block;
-    height: 3px;
-    background-color: #457E73;
-    border-radius: 2px;
-    transition: all 0.3s;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(7px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-7px);
-}
-
 /* Section Title */
 .mission {
     text-align: center;
@@ -690,17 +720,17 @@ button {
     align-items: stretch;
     gap: 20px;
     padding: 20px;
-    flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+    flex-wrap: wrap; 
     padding-bottom: 8rem;
   }
   
   /* Flip Box Styling */
   .flip-box {
     width: 300px;
-    height: 350px; /* Box height */
+    height: 350px; 
     perspective: 1000px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
     overflow: hidden;
     background-color: #fff;
   }
@@ -725,9 +755,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack text properly */
+    flex-direction: column;
     text-align: center;
-    padding: 30px; /* More padding for space around text */
+    padding: 30px; 
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     border-radius: 15px;
@@ -753,31 +783,32 @@ button {
   
   /* Text Styling */
   .flip-box h3 {
-    font-size: 22px; /* Larger title */
+    font-size: 22px; 
     font-weight: bold;
     margin-bottom: 15px;
   }
   
   .flip-box p {
-    font-size: 18px; /* Larger text for readability */
-    line-height: 1.6; /* More spacing between lines */
+    font-size: 18px; 
+    line-height: 1.6; 
     margin: 0;
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
     .flip-box-container {
-      flex-direction: column; /* Stack vertically on smaller screens */
+      flex-direction: column; 
       gap: 15px;
     }
   
     .flip-box {
-      width: 100%; /* Full width on smaller screens */
-      max-width: 400px; /* Optional max width */
+      width: 100%; 
+      max-width: 400px; 
     }
   
     .section-title h2 {
-      font-size: 24px; /* Adjust title size for smaller screens */
+      font-size: 24px;
     }
   }
-  
+ 
+ 
